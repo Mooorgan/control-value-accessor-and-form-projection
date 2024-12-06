@@ -1,0 +1,18 @@
+<h2>Forms Details:</h2>
+
+<form [formGroup]="formContainer" (ngSubmit)="submitForm()">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" formControlName="name" />
+  </div>
+  <div>
+    <label for="age">age</label>
+    <input type="number" name="age" formControlName="age" />
+  </div>
+
+  <br />
+
+  <app-address-component formControlName="address" />
+  <app-company-component formControlName="company" />
+  <button type="submit">Submit Form</button>
+</form>
