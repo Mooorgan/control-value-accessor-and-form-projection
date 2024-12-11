@@ -1,0 +1,21 @@
+<form [formGroup]="passengersForm" (ngSubmit)="submitForm()">
+  <div>
+    <label for="origin">Origin</label>
+    <input type="text" name="origin" formControlName="origin" />
+  </div>
+  <div>
+    <label for="destination">Destination</label>
+    <input type="text" name="destination" formControlName="destination" />
+  </div>
+  <ng-container formArrayName="passengers">
+    <app-single-form
+      *ngFor="let p of totalPassengers$ | async"
+    ></app-single-form>
+  </ng-container>
+
+  <button type="submit">Submit Form</button>
+</form>
+
+<br />
+
+<button type="submit" (click)="addPassenger()">Add Passengers</button>

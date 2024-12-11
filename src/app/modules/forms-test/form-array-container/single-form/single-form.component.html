@@ -1,0 +1,24 @@
+<ng-container *ngIf="passengerControl$ | async"></ng-container>
+hello
+<div [formGroupName]="index">
+  <div>
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" formControlName="firstName" />
+  </div>
+  <div>
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" formControlName="lastName" />
+  </div>
+  <div>
+    <label for="boardingPlace">Boarding Place</label>
+    <input type="text" name="boardingPlace" formControlName="boardingPlace" />
+  </div>
+  <div>
+    <label for="deboardingPlace">Deboarding Place</label>
+    <input
+      type="text"
+      name="deboardingPlace"
+      formControlName="deboardingPlace"
+    />
+  </div>
+</div>

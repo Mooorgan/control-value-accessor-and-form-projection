@@ -8,6 +8,8 @@ import { CompanyComponent } from './forms-test-container/company-component/compa
 import { FormContentProjectionComponent } from './form-content-projection/form-content-projection.component';
 import { FormStepComponent } from './form-content-projection/form-step/form-step.component';
 import { FormStepperComponent } from './form-content-projection/form-stepper/form-stepper.component';
+import { FormArrayContainerComponent } from './form-array-container/form-array-container.component';
+import { SingleFormComponent } from './form-array-container/single-form/single-form.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { FormStepperComponent } from './form-content-projection/form-stepper/for
     FormContentProjectionComponent,
     FormStepComponent,
     FormStepperComponent,
+    FormArrayContainerComponent,
+    SingleFormComponent,
   ],
   imports: [CommonModule, FormsTestRoutingModule, ReactiveFormsModule],
 })
